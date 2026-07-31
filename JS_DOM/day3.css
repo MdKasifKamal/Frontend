@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: rgb(175, 141, 141);
+ display: flex; justify-content: center;
+ align-items: center;
+}
+button{
+  font-size: 30px;
+  padding: 20px 50px;
+  background-color: maroon;
+  border: none;
+  border-radius: 10px;
+  color: rgb(130, 118, 118);
+}

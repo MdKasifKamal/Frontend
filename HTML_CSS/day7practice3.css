@@ -1,0 +1,32 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+#parent{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(17, 18, 18);
+ display: grid;
+ grid-template-columns:10% 40% 20% 20% 10%;
+ grid-template-rows:10% 40% 25% 25%; 
+
+}
+.child{
+  border: 2px solid black;
+}
+.child:nth-child(1n){
+  background-color: red;
+}
+.child:nth-child(2n){
+  background-color: blue;
+}
+.child:nth-child(3n){
+  background-color: green;
+}
+.child:nth-child(4n){
+  background-color: yellow;
+}

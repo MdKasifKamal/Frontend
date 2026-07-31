@@ -1,0 +1,20 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 100px minmax(10px , 400px) 100px;
+}
+.child{
+  background-color: turquoise;
+  border: 2px solid white;
+}

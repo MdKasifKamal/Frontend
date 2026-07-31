@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: rgb(227, 216, 216);
+}
+#parent{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow:auto;
+}
+#parent::-webkit-scrollbar{
+  display: none;
+}
+.child{
+  height: 100%;
+  width: 250px;
+  background-color: crimson;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+.child img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
