@@ -1,14 +1,12 @@
-var allBtn = document.querySelectorAll('button')
+var chutki = document.querySelector('img');
+var msg = document.querySelector('h2 span');
+var body = document.body;
 
-allBtn.forEach(function(elem){
-    elem.addEventListener('click',function(){
-        
-        if(elem.innerHTML == 'Add Friend'){
-            elem.innerHTML = 'Remove'
-        }else{
-            elem.innerHTML = 'Add Friend'
-        }
-        
-    })
-    
+chutki.addEventListener('mouseenter', function() {
+  msg.innerHTML = "chutki se dur jao";
+  body.style.backgroundColor = "red";
+})
+chutki.addEventListener('mouseleave', function() {
+  msg.innerHTML = "chutki ke pass jao";
+  body.style.backgroundColor = "white";
 })
